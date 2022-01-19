@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
+/* background styling */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+/* background styling complete */
+
+/* landing page styling */
+.start-container {
+  margin: auto;
+  margin-top: 30vh;
+  width: 50%;
+  height: 255px;
+  background: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.start-container h1,
+img {
+  margin-left: 23%;
+}
+
+.start-container h1 {
+  position: relative;
+  color: blue;
+  top: 30px;
+}
+
+.start-container img {
+  float: left;
+  height: 70px;
+  width: 70px;
+  margin-top: 34px;
+}
+
+.start-container input {
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 30px;
+  margin-top: 100px;
+}
+
+.start-container button {
+  display: block;
+  margin-top: 25px;
+  margin-left: 43%;
+  color: black;
+  text-decoration: none;
+  border: 0;
+  background: blue;
+  color: white;
+  height: 30px;
+  width: 20%;
+  border-radius: 10px;
+}
+/* landing page styling complete */
+
+/* country list styling */
+.country-list {
+  overflow-y: scroll;
+  width: 40vw;
+  height: 90vh;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+#list-background {
+  z-index: -1;
+  float: left;
+  position: fixed;
+  width: 40vw;
+  height: 90vh;
+  border-radius: 20px;
+  margin: auto;
+  background: white;
+  opacity: 25%;
+}
+
+.country-list h1 {
+  color: blue;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.country-list p {
+  color: white;
+  text-align: center;
+  margin-bottom: 18px;
+}
+/* country list styling complete*/
+
+.country-specific {
+  height: 2000px;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+#country-background {
+  z-index: -1;
+  float: left;
+  position: fixed;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 20px;
+  margin: auto;
+  background: white;
+  opacity: 25%;
+}
+
+.country-specific > h1 {
+  padding-top: 30px;
+}
+
+.country-specific > p {
+  margin-top: 18px;
+}
+
+.country-specific > h1,
+.country-specific > p {
+  color: white;
+  text-align: center;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0 100px -29%;
+}
+
+#map {
+  height: 180px;
+  width: 320px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}

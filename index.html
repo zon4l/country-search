@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country search</title>
+    <link rel="stylesheet" href="./static/style.css">    
+    <script src="https://kit.fontawesome.com/fc3dd883f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- background video -->
+    <header>
+        <video src="./static/video.mp4" type="video/mp4" class="video-container" muted autoplay loop></video>
+    </header>
+
+    <div class="main">
+
+        <!-- container holding components of main landing page -->
+        <div class="start-container" style="display: none;">
+            <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGLvlWRpHZ1BA/company-logo_200_200/0/1628823182689?e=2159024400&v=beta&t=HNrC9xDkG0_wuAJZokViNp-5KtGFjvCC8m6w7Vsf0Sc" alt="company logo">
+            <h1>DeepThought Country Search</h1>
+            <input type="text" name="search" id="start-search">
+            <button id="list-countries" onclick="getCountryList(showCountryList)">List all countries</button>
+        </div>
+
+        <!-- container for country list -->
+        <div class="country-list" style="display: none;">
+            <div id="list-background"></div>
+            <h1>Country list</h1>
+            <div class="country-list-show"></div>
+        </div>
+
+        <!-- container for country details -->
+        <div class="country-specific" style="display: none;">
+            <div id="country-background"></div>
+            <script src="./static/script.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCauNOnqe-MKLKyddYullDSjtBGtUR7nFA&libraries=&v=weekly"
+                async></script>
+        </div>
+    </div>
+
+</body>
+</html>
